@@ -401,7 +401,7 @@
           <p style="font-size:0.8rem;color:var(--muted);margin-top:0.6rem;">Polite, eager learner — buying fruit & supplies</p>
         </div>
         <div style="padding:1rem; background:white; border-radius:8px; border:1px solid var(--border);">
-          <div style="font-size:1.5rem; font-family:'Noto Serif SC',serif; font-weight:700;">张东 (P)</div>
+          <div style="font-size:1.5rem; font-family:'Noto Serif SC',serif; font-weight:700;">P</div>
           <div style="font-size:0.8rem; color:var(--muted); margin-top:0.3rem;">พี</div>
           <span class="char-role role-P" style="display:inline-block;margin-top:0.5rem;">Local Student</span>
           <p style="font-size:0.8rem;color:var(--muted);margin-top:0.6rem;">Helpful guide, knows the store and prices</p>
@@ -526,7 +526,7 @@
 // ──────────────────────────────────────────────
 const CHARS = {
   T: { label: 'Thee (T)', role: 'Student', cls: 'role-T' },
-  P: { label: '张东 (P)', role: 'Local', cls: 'role-P' },
+  P: { label: 'P', role: 'Local', cls: 'role-P' },
   L: { label: '老师', role: 'Teacher', cls: 'role-L' },
   M: { label: '营业员', role: 'Merchant', cls: 'role-M' },
   TP: { label: 'Thee & 张东', role: 'Together', cls: 'role-TP' },
@@ -556,7 +556,7 @@ const SCENES = {
     { c:'T',  h:'橘子很便宜！我要三斤。', p:'Júzi hěn piányi! Wǒ yào sān jīn.', t:'Tangerines are very cheap! I want three jin.' },
     { c:'M',  h:'还要别的吗？', p:'Hái yào bié de ma?', t:'Do you still want anything else?' },
     { c:'T',  h:'我不买别的。', p:'Wǒ bù mǎi bié de.', t:'I am not buying anything else.' },
-    { c:'M',  h:'苹果十四块，橘子十块，一共二十四块。', p:'Píngguǒ shísì kuài, júzi shí kuài, yígòng èrshísì kuài.', t:'Apples fourteen kuai, tangerines ten kuai, altogether twenty-four kuai.' },
+    { c:'M',  h:'一共二十四块。', p:'Yígòng èrshísì kuài.', t:'Altogether twenty-four kuai.' },
     { c:'T',  h:'这是五十块钱。', p:'Zhè shì wǔshí kuài qián.', t:'This is fifty kuai.' },
     { c:'M',  h:'找您二十六块。', p:'Zhǎo nín èrshíliù kuài.', t:'Giving you twenty-six kuai in change.' },
   ],
@@ -597,7 +597,7 @@ const SCENES = {
     { c:'P',  h:'我给五十块。', p:'Wǒ gěi wǔshí kuài.', t:"I'll give fifty kuai." },
     { c:'M',  h:'好。谢谢你们！', p:'Hǎo. Xièxie nǐmen!', t:'Good. Thank you all!' },
     { c:'T',  h:'不客气。', p:'Bú kèqi.', t:"You're welcome." },
-    { c:'L',  h:'Thee，张东，你们回学校吗？', p:'Thee, Zhāng Dōng, nǐmen huí xuéxiào ma?', t:'Thee, Zhang Dong, are you returning to school?' },
+    { c:'L',  h:'Thee, P，你们回学校吗？', p:'Thee, P, nǐmen huí xuéxiào ma?', t:'Thee, P, are you returning to school?' },
     { c:'P',  h:'对，我们回学校图书馆学习。', p:'Duì, wǒmen huí xuéxiào túshūguǎn xuéxí.', t:'Right, we are returning to the school library to study.' },
     { c:'L',  h:'明天去学校吗？', p:'Míngtiān qù xuéxiào ma?', t:'Are you going to school tomorrow?' },
     { c:'T',  h:'明天星期一，我们去学校学习。', p:'Míngtiān xīngqīyī, wǒmen qù xuéxiào xuéxí.', t:'Tomorrow is Monday, we are going to school to study.' },
