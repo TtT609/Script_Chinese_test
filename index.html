@@ -374,9 +374,9 @@
 <!-- Scene Navigation -->
 <nav class="scene-nav" id="sceneNav">
   <button class="scene-tab active" data-scene="0">Characters</button>
-  <button class="scene-tab" data-scene="1">Scene 1 · 在学校</button>
-  <button class="scene-tab" data-scene="2">Scene 2 · 买水果</button>
-  <button class="scene-tab" data-scene="3">Scene 3 · 买茶和咖啡</button>
+  <button class="scene-tab" data-scene="1">Scene 1 · 在大学</button>
+  <button class="scene-tab" data-scene="2">Scene 2 · 买茶和咖啡</button>
+  <button class="scene-tab" data-scene="3">Scene 3 · 买水果</button>
   <button class="scene-tab" data-scene="4">Scene 4 · 买日用品</button>
 </nav>
 
@@ -436,7 +436,7 @@
     <div class="scene-header">
       <div class="scene-number">一</div>
       <div class="scene-title-block">
-        <h2>Scene 1 · 在学校附近</h2>
+        <h2>Scene 1 · 在大学附近</h2>
         <div class="scene-subtitle">Meeting Near the University</div>
       </div>
     </div>
@@ -456,11 +456,11 @@
     <div class="scene-header">
       <div class="scene-number">二</div>
       <div class="scene-title-block">
-        <h2>Scene 2 · 在商店 — 买水果</h2>
-        <div class="scene-subtitle">At the Market — Buying Fruit</div>
+        <h2>Scene 2 · 买茶和咖啡</h2>
+        <div class="scene-subtitle">Buying Tea &amp; Coffee</div>
       </div>
     </div>
-    <div class="stage-direction">🛒 They arrive at the store. The Merchant greets them.</div>
+    <div class="stage-direction">☕ The Teacher steps forward to the counter.</div>
     <div class="controls-bar">
       <div class="toggle-group">
         <button class="toggle-btn active" data-toggle="pinyin">Pīnyīn</button>
@@ -476,11 +476,11 @@
     <div class="scene-header">
       <div class="scene-number">三</div>
       <div class="scene-title-block">
-        <h2>Scene 3 · 买茶和咖啡</h2>
-        <div class="scene-subtitle">Buying Tea &amp; Coffee</div>
+        <h2>Scene 3 · 在商店 — 买水果</h2>
+        <div class="scene-subtitle">At the Market — Buying Fruit</div>
       </div>
     </div>
-    <div class="stage-direction">☕ The Teacher steps forward to the counter.</div>
+    <div class="stage-direction">🛒 They arrive at the store. The Merchant greets them.</div>
     <div class="controls-bar">
       <div class="toggle-group">
         <button class="toggle-btn active" data-toggle="pinyin">Pīnyīn</button>
@@ -544,23 +544,6 @@ const SCENES = {
     { c:'L',  h:'我买红茶。', p:'Wǒ mǎi hóngchá.', t:'I am buying black (red) tea.' },
   ],
   2: [
-    { c:'M',  h:'你们好！欢迎！', p:'Nǐmen hǎo! Huānyíng!', t:'Hello, everyone! Welcome!' },
-    { c:'P',  h:'你好！这儿有苹果吗？', p:'Nǐ hǎo! Zhèr yǒu píngguǒ ma?', t:'Hello! Are there apples here?' },
-    { c:'M',  h:'有。那些苹果很好。你们买多少？', p:'Yǒu. Nàxiē píngguǒ hěn hǎo. Nǐmen mǎi duōshao?', t:'Yes. Those apples are very good. How much are you buying?' },
-    { c:'T',  h:'苹果多少钱一斤？', p:'Píngguǒ duōshao qián yì jīn?', t:'How much money is one jin of apples?' },
-    { c:'M',  h:'八块钱一斤。', p:'Bā kuài qián yì jīn.', t:'Eight kuai a jin.' },
-    { c:'T',  h:'太贵了！便宜一点儿吧。', p:'Tài guì le! Piányi yìdiǎnr ba.', t:'Too expensive! A little cheaper, please.' },
-    { c:'M',  h:'好吧，七块钱一斤。要几斤？', p:'Hǎo ba, qī kuài qián yì jīn. Yào jǐ jīn?', t:'Alright, seven kuai a jin. How many jin do you want?' },
-    { c:'T',  h:'我买两斤。有橘子吗？', p:'Wǒ mǎi liǎng jīn. Yǒu júzi ma?', t:"I'll buy two jin. Do you have tangerines?" },
-    { c:'M',  h:'橘子十块钱三斤。', p:'Júzi shí kuài qián sān jīn.', t:'Tangerines are ten kuai for three jin.' },
-    { c:'T',  h:'橘子很便宜！我要三斤。', p:'Júzi hěn piányi! Wǒ yào sān jīn.', t:'Tangerines are very cheap! I want three jin.' },
-    { c:'M',  h:'还要别的吗？', p:'Hái yào bié de ma?', t:'Do you still want anything else?' },
-    { c:'T',  h:'我不买别的。', p:'Wǒ bù mǎi bié de.', t:'I am not buying anything else.' },
-    { c:'M',  h:'一共二十四块。', p:'Yígòng èrshísì kuài.', t:'Altogether twenty-four kuai.' },
-    { c:'T',  h:'这是五十块钱。', p:'Zhè shì wǔshí kuài qián.', t:'This is fifty kuai.' },
-    { c:'M',  h:'找您二十六块。', p:'Zhǎo nín èrshíliù kuài.', t:'Giving you twenty-six kuai in change.' },
-  ],
-  3: [
     { c:'L',  h:'先生，请问，这儿有茶叶吗？', p:'Xiānsheng, qǐngwèn, zhèr yǒu cháyè ma?', t:'Mister, excuse me, are there tea leaves here?' },
     { c:'M',  h:'有。您要什么茶叶？', p:'Yǒu. Nín yào shénme cháyè?', t:'Yes. What tea leaves do you want?' },
     { c:'L',  h:'我要买红茶。多少钱一斤？', p:'Wǒ yào mǎi hóngchá. Duōshao qián yì jīn?', t:'I want to buy black (red) tea. How much money a jin?' },
@@ -572,6 +555,18 @@ const SCENES = {
     { c:'L',  h:'这是六十块。Thee，P，请你们喝咖啡。', p:'Zhè shì liùshí kuài. Thee, P, qǐng nǐmen hē kāfēi.', t:'This is sixty kuai. Thee, P, I invite you to drink coffee.' },
     { c:'TP', h:'谢谢老师！', p:'Xièxie lǎoshī!', t:'Thank you, teacher!' },
     { c:'L',  h:'不客气。', p:'Bú kèqi.', t:"You're welcome." },
+  ],
+  3: [
+    { c:'M',  h:'你们好！欢迎！', p:'Nǐmen hǎo! Huānyíng!', t:'Hello, everyone! Welcome!' },
+    { c:'P',  h:'你好！这儿有苹果吗？', p:'Nǐ hǎo! Zhèr yǒu píngguǒ ma?', t:'Hello! Are there apples here?' },
+    { c:'M',  h:'有。那些苹果很好。你们买多少？', p:'Yǒu. Nàxiē píngguǒ hěn hǎo. Nǐmen mǎi duōshao?', t:'Yes. Those apples are very good. How much are you buying?' },
+    { c:'T',  h:'苹果多少钱一斤？', p:'Píngguǒ duōshao qián yì jīn?', t:'How much money is one jin of apples?' },
+    { c:'M',  h:'八块钱一斤。', p:'Bā kuài qián yì jīn.', t:'Eight kuai a jin.' },
+    { c:'T',  h:'太贵了！便宜一点儿吧。', p:'Tài guì le! Piányi yìdiǎnr ba.', t:'Too expensive! A little cheaper, please.' },
+    { c:'M',  h:'好吧，七块钱一斤。要几斤？', p:'Hǎo ba, qī kuài qián yì jīn. Yào jǐ jīn?', t:'Alright, seven kuai a jin. How many jin do you want?' },
+    { c:'T',  h:'我买两斤。有橘子吗？', p:'Wǒ mǎi liǎng jīn. Yǒu júzi ma?', t:"I'll buy two jin. Do you have tangerines?" },
+    { c:'M',  h:'橘子十块钱三斤。', p:'Júzi shí kuài qián sān jīn.', t:'Tangerines are ten kuai for three jin.' },
+    { c:'T',  h:'橘子很便宜！我要三斤。', p:'Júzi hěn piányi! Wǒ yào sān jīn.', t:'Tangerines are very cheap! I want three jin.' },
   ],
   4: [
     { c:'M',  h:'你们还要什么？', p:'Nǐmen hái yào shénme?', t:'What else do you want?' },
@@ -587,20 +582,20 @@ const SCENES = {
     { c:'T',  h:'我要两支小毛笔。', p:'Wǒ yào liǎng zhī xiǎo máobǐ.', t:'I want two small writing brushes.' },
     { c:'P',  h:'Thee，我有大毛笔。我给你一支大毛笔吧。', p:'Thee, wǒ yǒu dà máobǐ. Wǒ gěi nǐ yì zhī dà máobǐ ba.', t:'Thee, I have big writing brushes. Let me give you a big writing brush.' },
     { c:'T',  h:'太谢谢你了！P，你要买什么？', p:'Tài xièxie nǐ le! P, nǐ yào mǎi shénme?', t:'Thank you so much! P, what do you want to buy?' },
-    { c:'P',  h:'我没有优盘。我要买一个优盘。', p:'Wǒ méiyǒu yōupán. Wǒ yào mǎi yí gè yōupán.', t:"I don't have a USB flash drive. I want to buy a USB flash drive." },
+    { c:'P',  h:'我要买一个优盘。', p:'Wǒ yào mǎi yí gè yōupán.', t:'I want to buy a USB flash drive.' },
     { c:'M',  h:'那个黑优盘六十块。', p:'Nà gè hēi yōupán liùshí kuài.', t:'That black USB flash drive is sixty kuai.' },
     { c:'P',  h:'太贵了！有便宜一点儿的吗？', p:'Tài guì le! Yǒu piányi yìdiǎnr de ma?', t:'Too expensive! Do you have a slightly cheaper one?' },
     { c:'M',  h:'这个蓝优盘五十块。很便宜。', p:'Zhè gè lán yōupán wǔshí kuài. Hěn piányi.', t:'This blue USB flash drive is fifty kuai. Very cheap.' },
     { c:'P',  h:'好，我买这个蓝的。', p:'Hǎo, wǒ mǎi zhè gè lán de.', t:"Good, I'll buy this blue one." },
-    { c:'M',  h:'一共一百零五块。', p:'Yígòng yìbǎi líng wǔ kuài.', t:'Altogether one hundred and five kuai.' },
-    { c:'T',  h:'我给五十五块。', p:'Wǒ gěi wǔshíwǔ kuài.', t:"I'll give fifty-five kuai." },
+    { c:'M',  h:'一共一百二十九块。', p:'Yígòng yìbǎi èrshíjiǔ kuài.', t:'Altogether one hundred and twenty-nine kuai.' },
+    { c:'T',  h:'我给七十九块。', p:'Wǒ gěi qīshíjiǔ kuài.', t:"I'll give seventy-nine kuai." },
     { c:'P',  h:'我给五十块。', p:'Wǒ gěi wǔshí kuài.', t:"I'll give fifty kuai." },
     { c:'M',  h:'好。谢谢你们！', p:'Hǎo. Xièxie nǐmen!', t:'Good. Thank you all!' },
     { c:'T',  h:'不客气。', p:'Bú kèqi.', t:"You're welcome." },
-    { c:'L',  h:'Thee, P，你们回学校吗？', p:'Thee, P, nǐmen huí xuéxiào ma?', t:'Thee, P, are you returning to school?' },
-    { c:'P',  h:'对，我们回学校图书馆学习。', p:'Duì, wǒmen huí xuéxiào túshūguǎn xuéxí.', t:'Right, we are returning to the school library to study.' },
-    { c:'L',  h:'明天去学校吗？', p:'Míngtiān qù xuéxiào ma?', t:'Are you going to school tomorrow?' },
-    { c:'T',  h:'明天星期一，我们去学校学习。', p:'Míngtiān xīngqīyī, wǒmen qù xuéxiào xuéxí.', t:'Tomorrow is Monday, we are going to school to study.' },
+    { c:'L',  h:'Thee, P，你们回大学吗？', p:'Thee, P, nǐmen huí dàxué ma?', t:'Thee, P, are you returning to the university?' },
+    { c:'P',  h:'对，我们回大学图书馆学习。', p:'Duì, wǒmen huí dàxué túshūguǎn xuéxí.', t:'Right, we are returning to the university library to study.' },
+    { c:'L',  h:'明天去大学吗？', p:'Míngtiān qù dàxué ma?', t:'Are you going to the university tomorrow?' },
+    { c:'T',  h:'明天星期一，我们去大学学习。', p:'Míngtiān xīngqīyī, wǒmen qù dàxué xuéxí.', t:'Tomorrow is Monday, we are going to the university to study.' },
     { c:'L',  h:'好，你们学习忙吗？', p:'Hǎo, nǐmen xuéxí máng ma?', t:'Good, are you busy with your studies?' },
     { c:'T',  h:'我们很忙。汉字很难，但是我们很高兴。', p:'Wǒmen hěn máng. Hànzì hěn nán, dànshì wǒmen hěn gāoxìng.', t:'We are very busy. Chinese characters are very difficult, but we are very happy.' },
     { c:'L',  h:'很好！明天见！', p:'Hěn hǎo! Míngtiān jiàn!', t:'Very good! See you tomorrow!' },
